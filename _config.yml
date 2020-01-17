@@ -1,20 +1,43 @@
-# Site settings
-title: Mauricio Urraco
-description: Jekyll Theme Minimal Resume
-baseurl: "/" # the subpath of your site, e.g. /blog
-url: "madfalc0n.github.io" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
+title: NoteTheme
+description: You cannot remember everything.
+baseurl: "/"
+url: "madfalc0n.github.io"
+repository: dinhanhthi/notetheme
+paginate: 28
 
-# User settings
-username: Mauricio Urraco
-user_description: I\'m a nomad Software Engineer, always searching for the next challenge; no task is too scary nor too difficult. Lately I have been immersed in the <b>crypto-world</b> working for Radix, a London based startup trying to create the next massive scalable DLT. I'm one of the two guys behind all the JS related stuff. Visit my blog here <a href="https://mauriciourraco.com" target="_blank">https://mauriciourraco.com</a>
-user_title: Software Engineer
-email: mauriurraco@gmail.com
-# twitter_username: lorem_ipsum
-# github_username:  lorem_ipsum
-# gplus_username:  lorem_ipsum
+banner: "/assets/res/banner.png" # site banner (load when someone share your page url)
+favicon: "/assets/res/favicon.png" # site's favicon (icon left side of your page)
 
-# Google-analytics
-google-analytics:
-  id: ""
+# MatJek specific configurations
+user: 
+  name: "Math2IT"
+  email: "dinhanhthimail@gmail.com"
+  website: "math2it.com"
+  avatar: "/assets/res/user.png"
+  github: "dinhanhthi"
+google_tracking_id: ""
+google_site_verification: ""
+disqus_shortname: this-site
 
-exclude: ['package.json', 'src' , 'node_modules']
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:title
+
+
+gems:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-archives
+  - jekyll-redirect-from
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+
+sass:
+  style: compressed
+
+  future: true
