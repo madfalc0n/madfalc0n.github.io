@@ -1,47 +1,94 @@
-# PRoJEct-NeGYa
+# Jekyll Resume Theme
 
-黑客风格的个人主页模板。
+Live demo at https://jekyll-theme-minimal-resume.netlify.com/
 
-版本： v1.01
+[![Netlify Status](https://api.netlify.com/api/v1/badges/24d80ae8-c3d9-4645-a6d8-9e97fc8dec3c/deploy-status)](https://app.netlify.com/sites/jekyll-theme-minimal-resume/deploys)
 
-## 特性
+# Stack
 
-1. 狂拽酷炫
-2. Rouge支持代码高亮
-3. MathJax公式
-4. 文章索引
-5. 高度可定制化
-6. 加密内容（也可以把元素id改成密文，元素内容写“无该字段访问权限！”）
+![](https://img.shields.io/badge/jekyll-✓-blue.svg)
+![](https://img.shields.io/badge/html5-✓-blue.svg)
+![](https://img.shields.io/badge/sass-✓-blue.svg)
+![](https://img.shields.io/badge/sweet--scroll-✓-blue.svg)
+![](https://img.shields.io/badge/particle--js-✓-blue.svg)
+![](https://img.shields.io/badge/font--awesome-✓-blue.svg)
+![](https://img.shields.io/badge/devicon-✓-blue.svg)
+![](https://img.shields.io/badge/gulp-✓-blue.svg)
 
-## 更新日志
+***
 
-2019.7.17：更新说明文件
+<h3 align="center">Please help this repo with a :star: if you find it useful! :blush:</h3>
 
-2019.6.15：老子就做这一版，凑合能用得了，我可不改了啊！
+***
 
-## 使用方法
+# Screenshot
 
-* 下载或者fork到自己的github仓库里
-* 修改_config.yml文件
-* （自定义域名）修改CNAME文件
-* 修改pages/index.md文件，自定义主页
-* 删除_posts/文件夹里的文件，添加自己的文章
-* 同步到github远程仓库
+<p align="center">
+  <img src="https://github.com/murraco/jekyll-theme-minimal-resume/blob/master/screenshot.png" width="90%" />
+</p>
 
-## 工程结构
+# Quick Setup
 
-功能和内容隔离TMD！
+1. Install Jekyll: `gem install jekyll bundler`
+2. For this repository and clone your fork
+3. Edit `_config.yml` to personalize your site
 
-网站内容：
-* _posts：文章
-* pages：页面
-* assets/img：图
+# Settings
 
-功能样式：
-* _includes：子页面模块
-* _layouts：页面模板（单纯地组合子页面模块）
-* assets/css：样式表文件
-* assets/fonts：字体文件
-* assets/js：脚本文件
-* _config.yml：配置文件
+You have to fill some informations on `_config.yml` to customize your site:
 
+## Site settings
+```yml
+description: A blog about lorem ipsum dolor sit amet
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://localhost:3000" # the base hostname & protocol for your site
+```
+
+## User settings
+```yml
+username: Lorem Ipsum
+user_description: Software Engineer at Lorem Ipsum Dolor
+user_title: Mauricio Urraco
+email: mauriurraco@gmail.com
+```
+
+> Don't forget to change your URL before you deploy your site!
+
+# Color and Particle Customization
+
+- Color Customization
+  - Edit the `.sass` variables
+- Particle Customization
+  - Edit the json data in particle function in `app.js`
+  - Refer to `Particle.js` for help
+  
+# Content
+
+You can (and should) edit the `.html` files for adding your own information, icons, working experience, social links or whatever you want to add. I.e.:
+
+```html
+<a aria-label="My Github" target="_blank" href="https://github.com/murraco">
+  <i class="icon fa fa-github-alt" aria-hidden="true"></i>
+</a>
+```
+
+# Running locally
+
+In order to compile the assets and run `Jekyll` locally you need to follow those steps:
+
+1. Install Jekyll
+2. Run `jekyll build`
+3. Start and http-server in the folder `_site`
+
+# Contribution
+
+- Report issues
+- Open pull request with improvements
+- Spread the word
+- Reach out to me directly at <mauriurraco@gmail.com>
+
+# Donate
+
+`btc: 36V7HqqENSKn6iFCBuE4iCdtB29uGoCKzN`
+
+`eth: 0xB419E3E9fa2233383E0877d442e55C34B9C944dD`
