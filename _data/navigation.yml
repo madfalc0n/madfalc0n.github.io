@@ -11,20 +11,20 @@ main:
   # - title: "Sitemap"
   #   url: /sitemap/
 
-  docs:
-  - title: TIL
-    children:
-      - title: "Quick-Start Guide"
-        url: /docs/quick-start-guide/
+docs:
+- title: TIL
+  children:
+    - title: "Quick-Start Guide"
+      url: /docs/quick-start-guide/
 
-  - title: TroubleShoots
-    children:
-      - title: "Python"
-        url: /docs/configuration/
-      - title: "Navigation"
+- title: TroubleShoots
+  children:
+    - title: "Python"
+      url: /docs/configuration/
+    - title: "Navigation"
 
-  - title: Projects
-    children:
-      - title: "Working with Posts"
-        url: /docs/posts/
+- title: Projects
+  children:
+    - title: "Working with Posts"
+      url: /docs/posts/
 
