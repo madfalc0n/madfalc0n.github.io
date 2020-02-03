@@ -293,8 +293,10 @@ defaults:
       comments: # true
       share: true
       related: true
-
-
-
-header:
-  image: /assets/images/f14.jpg
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
