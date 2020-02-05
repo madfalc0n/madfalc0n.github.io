@@ -1,3 +1,8 @@
+---
+title: 'Keras callback Function'
+layout: post
+---
+
 # Keras_callback Function
 
 ## EarlyStopping
