@@ -20,7 +20,8 @@
   }
 
   .site-title {
-    float: left;
+    //float: left;
+    text-align: center;
     font-weight: bold;
     font-size: 1em;
     line-height: 1.5;
@@ -33,14 +34,17 @@
       padding: 0;
       list-style: none;
       line-height: 1.5;
-      float: right;
-      text-align: right;
-      padding-bottom: $padding-small*1.5;
+      float: left;
+      text-align: center;
+      padding-bottom: $padding-small*1;
+      padding-top: $padding-small*1;
+      padding-left: $padding-small*5;
     }
+
     li {
       display: inline;
       float: left;
-      margin-right: 0.4em;
+      margin-right: 2em;
     }
     a {
     color: $header-link-color;

@@ -5,7 +5,7 @@ $font-size: 1em;
 
 // Padding
 $padding-large: 20%;
-$padding-small: 3%;
+$padding-small: 1%;
 $padding-b-small: 1%;
 $padding-x-small: 3%;
 
@@ -16,8 +16,8 @@ $background-color: #fff;
 $border-color: rgba(0, 0, 0, 0.1); // rgba recommended if using feature images
 
 // Typography colours
-$text-color: #383838;
-$link-color: rgb(97, 126, 255);
+$text-color: #000000;
+$link-color: #ff0000;
 $selection-color: #D4D4D4; // visible when highlighting text
 
 // Tags color
@@ -27,7 +27,7 @@ $tags-color: #b0b0b0;
 $search-color: #999;
 
 // Header colours
-$header-link-color: rgb(97, 126, 255);
+$header-link-color: #000000;
 $header-brand-color: #000000;
 
 // Feature image for articles
@@ -37,4 +37,4 @@ $feature-image-size: cover; // options include "cover", "contain", "auto"
 // Header description box
 $header-desc-background-color: #FFF;
 $header-desc-text-color: #000000;// #b0b0b0;
-$header-desc-link-color: #02453D;
+$header-desc-link-color:  #FFF;
