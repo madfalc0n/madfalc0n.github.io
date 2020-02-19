@@ -1,14 +1,17 @@
-<!DOCTYPE html>
-<html class="no-js">
-  {% include head.html %}
-  {% include header.html %}
-  <body>
-    <div class="content">
-      {{ content }}
-    </div>
-    {% include footer.html %}
-    <script id="dsq-count-scr" src="//{{ site.disqus }}.disqus.com/count.js" async></script>
+---
+layout: compress
+---
 
-    {% include analytics-google.html %}
-  </body>
+<!DOCTYPE html>
+<html lang="{{ site.language }}" class="no-js">
+    {% include head.html %}
+    <body class="has-push-menu">
+        {% include svg-icons.html %}
+        {% include header.html %}
+            <section class="content">
+                {{ content }}
+            </section>
+        {% include footer.html %}
+    </body>
 </html>
+
