@@ -1,9 +1,9 @@
 ---
 date: 2020-02-14 21:00:00
 layout: post
-title: Django 기초 - 2. Ajax 이해
+title: Django 기초 - 2
 subtitle: Ajax가 무엇인지 이해하고 Django를 통해 Ajax 기능을 구현하는 실습을 진행
-description: Ajax 기본개념 및 실습 진행
+description: Ajax 기본개념 이해 및 실습 진행
 image: 
 optimized_image: /assets/img/banner/django.png
 category: python

@@ -86,6 +86,11 @@ sass:
 plugins:
   - jekyll-paginate
   - jekyll-paginate-content
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+  - jekyll-include-cache
 
 # Exclude my node related stuff
 exclude: [

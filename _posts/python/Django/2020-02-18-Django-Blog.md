@@ -1,9 +1,9 @@
 ---
 date: 2020-02-18 21:00:00
 layout: post
-title: Django 기초 - 4. 블로그 기능 만들기
+title: Django 기초 - 4
 subtitle: Django를 통해 블로그를 만들기 위한 실습을 진행해 보자!
-description: 블로그 만들기 실습 진행
+description: 블로그 기능 생성
 image: 
 optimized_image: /assets/img/banner/django.png
 category: python
@@ -17,7 +17,9 @@ comments: true
 ---
 
 
-오늘 블로그를 만들기 위한 포스트 기능(db 생성, 포스트 추가, 수정 )을 구현해보는 실습을 가짐
+오늘 블로그를 만들기 위한 포스트 기능(db 생성, 포스트 추가, 수정 )을 구현해보는 실습을 가짐, 
+
+# 아직 추가적으로 기입할 곳이 많다...수정중
 
 
 
@@ -279,19 +281,9 @@ urlpatterns = [
 ]
 ```
 
-* detailview.html
+ -  detailview.html
 
-```python
-{% for i in data %}
-    <a href="{{i.pk}}/detail">  {{i.title}} </a>     <br>
-    <a href="{% url 'detail' i.pk %} ">  {{i.title}} </a>     <br>  #마크다운 생성시 문제가 생겨 주석처리 함 실제 테스트할땐 urk 를 url로 바꿔서 진행
-    <a href="/blog/{{i.pk}}/detail">  {{i.title}} </a>     <br>
-    <a href="/blog/detail?id={{i.pk}}">  {{i.title}} </a>     <br>
-    <a href="detail?id={{i.pk}}">  {{i.title}} </a>     <br>
-    {% endfor %}
-
-{% endblock %}
-```
+<img src="/assets/img/contents/Django_Blog/image-20200219210957126.png" alt="image-20200219210957126" style="zoom:80%;" />
 
 
 

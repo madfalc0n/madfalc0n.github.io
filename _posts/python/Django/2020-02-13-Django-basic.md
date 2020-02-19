@@ -1,9 +1,9 @@
 ---
 date: 2020-02-13 21:00:00
 layout: post
-title: Django 기초 - 1. Django 이해
+title: Django 기초 - 1
 subtitle: Django에 대한 기본개념과 테스트한 내용을 정리 하였음
-description: Django 기본개념, 프로젝트 설치를 통한 실습 진행
+description: Django 기본개념 이해 및  프로젝트 설치를 통한 실습 진행
 image: 
 optimized_image: /assets/img/banner/django.png
 category: python

@@ -1,9 +1,9 @@
 ---
-date: 2020-02-19 21:00:00
+date: 2020-02-19 08:00:00
 layout: post
-title: Django 기초 - 5. 게시판 기능 만들기
+title: Django 기초 - 5
 subtitle: Django를 통해 게시판을 만들기 위한 실습을 진행해 보자!
-description: 게시판 만들기 실습 진행
+description: 게시판 기능 만들기 실습 진행
 image: 
 optimized_image: /assets/img/banner/django.png
 category: python
@@ -116,7 +116,7 @@ comments: true
 
    * db에 실제로 적용할 경우 `migrate`를 입력하면 된다. 
 
-     <img src="images/Django_Blog/image-20200219173011736.png" alt="image-20200219173011736" style="zoom:80%;" />
+     <img src="/assets/img/contents/Django_Board/image-20200219173011736.png" alt="image-20200219173011736" style="zoom:80%;" />
 
    > admin 페이지에서 myboard DB가 생성된거 확인
 
@@ -223,96 +223,33 @@ comments: true
 
 10. template-myboard 안에 base edit... html 파일들 추가
 
+    - 깃헙페이지에서 html 코드를 짤 경우 제대로 업로드 되지 않는 현상이 발생한다...코드는 [실습자료](https://github.com/madfalc0n/Image-analysis-and-develope/tree/master/web/20200219/mysite/templates/myboard)를 활용해서 보도록 하자
+
    - bash.html
 
-   ```html
-   <font color=red size=6>My 게시판</font><br>
-   로그인 사용자 :{{username}}<br>
-   
-   <a href="/myboard/category/0/list"> 모든게시판 </a><br>
-   <a href="/myboard/data/0/list"> 자료실 </a><br>
-   <a href="/myboard/common/0/list"> 일반게시판 </a><br>
-   <a href="/myboard/etc/0/list"> 자유게시판 </a><br>
-   
-   <br>
-   <hr>
-   
-   {% block content %}
-   
-   {% endblock %}
-   <hr>
-   
-   <h5>copy right ...</h5>
-   명만킴
-   ```
+<img src="/assets/img/contents/Django_Board/image-20200219211905926.png" alt="image-20200219211905926" style="zoom:80%;" />
+
+
+
+
 
    - list.html
 
-   ```html
-   {% extends 'myboard/base.html' %}
-   
-   {% block content %}
-   <a href="{% url 'myboard' 'category' 0 'add'%}"> 신규 작성하기  </a> <br>
-   <hr>
-   
-   <h5> 게시글 내용  </h5> 
-   {%  for d in data %}
-   <a href="{% url 'myboard' 'category' d.pk 'detail'%}"> {{d.title}} </a> 
-   <a href="{% url 'myboard' 'category' d.pk 'delete'%}"> 삭제하기</a> <br>
-   {% endfor %}
-   
-   {% endblock %}
-   ```
+<img src="/assets/img/contents/Django_Board/image-20200219212121959.png" alt="image-20200219212121959" style="zoom:80%;" />
+
+
 
    - edit.html
 
-   ```html
-   <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-   <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-   
-    <style>
-         .bg { background-color: #eeeeee; }
-         .bd { border: 1px solid #666666; }
-    </style>
-   
-   {% if form.title.value %}
-   <h1>  수정하기 </h1>
-   {% else %}
-   <h1>  신규작성</h1>
-   {% endif %}
-   
-   
-   <form method=post>
-      {% csrf_token %}
-      	{{ form.as_p }}
-   
-      <input type="submit" value="작성" >
-   
-   </form>
-   
-   <script>
-      $("#id_title").addClass('bg bd');
-   </script>
-   ```
+<img src="/assets/img/contents/Django_Board/image-20200219212107709.png" alt="image-20200219212107709" style="zoom:80%;" />
+
+
 
    - detailview.html
 
-   ```html
-   {% extends 'myboard/base.html' %}   
-   
-   
-   게시물 보기  <br>
-   
-   {% block content %}
-       <hr>
-       {{data.title}}  <br>
-       {{data.text | linebreaks}}
-       <hr>
-       <a href="{% url 'myboard' 'category' 0 'list' %}">  리스트로 돌아가기 </a> <br>
-       <a href="{% url 'myboard' 'category' data.pk 'edit'%}"> 수정하기 </a> <br>
-   
-   {% endblock %}
-   ```
+<img src="/assets/img/contents/Django_Board/image-20200219212058445.png" alt="image-20200219212058445" style="zoom:80%;" />
+
+
 
    
 
