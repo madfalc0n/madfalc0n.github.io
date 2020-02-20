@@ -2,7 +2,7 @@
 name: Madfalc0n's Blog
 theme: jekflix
 title: Madfalc0n's Blog
-description: Jekflix is a template for Jekyll inspired by Netflix and made by Thiago Rossener.
+description: 학습하고 공유하는 개인적인 블로그 입니다.
 tags:
   - blog
   - template
@@ -106,4 +106,4 @@ exclude: [
 ]
 
 # Theme
-version: v3.0.2
+version: v1.0.0
