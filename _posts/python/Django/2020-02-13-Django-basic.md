@@ -4,7 +4,7 @@ layout: post
 title: Django 기초 - 1
 subtitle: Django에 대한 기본개념과 테스트한 내용을 정리 하였음
 description: Django 기본개념 이해 및  프로젝트 설치를 통한 실습 진행
-image: 
+image: /assets/img/banner/django.png
 optimized_image: /assets/img/banner/django.png
 category: python
 tags:
@@ -15,9 +15,6 @@ author: madfalc0n
 paginate: true
 comments: true
 ---
-
-
-<img src="/assets/img/contents/Django/image-20200218191654448.png" alt="image-20200218191654448" style="zoom:80%;" />
 
 > 파이썬의 경량 웹 프레임워크, 플라스크의 단점을 보완
 

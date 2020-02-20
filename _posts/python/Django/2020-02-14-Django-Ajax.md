@@ -17,15 +17,10 @@ comments: true
 ---
 
 
-# Ajax(Asynchronous Javascript And XML)
-
-> 자바스크립트와 XML을 이용한 비동기 방식의 연동 방법론
-
-
 
 ## 정의
 
-클라이언트 화면에서 javascript 또는 jQuery 로 서버에 자료를 요청하면 **현재 페이지의 화면 전환 없이** 서버에서 XML 또는 JSON 데이터 자료를 전송한다.
+**Ajax(Asynchronous Javascript And XML)**는 자바스크립트와 XML을 이용한 **비동기 방식**의 연동 방법론 이다.클라이언트 화면에서 javascript 또는 jQuery 로 서버에 자료를 요청하면 **현재 페이지의 화면 전환 없이** 서버에서 XML 또는 JSON 데이터 자료를 전송한다.
 
 
 

@@ -17,9 +17,12 @@ comments: true
 ---
 
 
-## ORM(Object Relation Model)
 
-<img src="images/Django_ORM/image-20200218192753768.png" alt="image-20200218192753768" style="zoom:80%;" />
+## 정의
+
+ORM(Object Relation Model)
+
+<img src="/assets/img/contents/Django_ORM/image-20200218192753768.png" alt="image-20200218192753768" style="zoom:80%;" />
 
 > 출처: [사이트](https://medium.com/@dawnsaq/what-is-an-orm-e2c00d43e9b6)
 
@@ -63,7 +66,8 @@ comments: true
 
 ### ORM 연동해보기
 
-1. `settings.py`에서 `INSTALLED_APPS`항목에서 다음과  같이 추가한다. 어플리케이션 별로 DB 저장이 가능하다. 나는 `myapp` 에 대해 따로 디비를 만들어 볼 것이다.
+1. shell에서 프로젝트를 하나 만들고 어플리케이션을 추가한다. 나는 `myapp`으로 생성하였다.
+2. `settings.py`에서 `INSTALLED_APPS`항목에서 다음과  같이 추가한다. 어플리케이션 별로 DB 저장이 가능하다. 나는 `myapp` 에 대해 따로 디비를 만들어 볼 것이다.
 
 <img src="/assets/img/contents/Django_ORM/image-20200217141022063.png" alt="image-20200217141022063" style="zoom:80%;" />
 
