@@ -91,6 +91,7 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
+  - jekyll-toc
 
 # Exclude my node related stuff
 exclude: [
@@ -107,3 +108,13 @@ exclude: [
 
 # Theme
 version: v1.0.0
+
+# Toc
+toc:
+  min_level: 1
+  max_level: 6
+  no_toc_section_class: no_toc_section
+  list_class: section-nav
+  sublist_class: ''
+  item_class: toc-entry
+  item_prefix: toc-

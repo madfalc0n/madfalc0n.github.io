@@ -10,7 +10,7 @@
 .post.two-columns {
   display: flex;
   flex-direction: column;
-  padding-bottom: rem(40px);
+  padding-bottom: rem(40px); //40px
 
   @include media(">=sm") {
     max-width: rem(1100px);
@@ -23,9 +23,14 @@
     padding-bottom: rem(10px);
 
     @include media(">=sm") {
-      flex-basis: 70%;
+      flex-basis: 75%;
       padding: 0 rem(30px) 0 rem(10px);
     }
+
+
+  
+    
+
   }
 }
 
@@ -68,7 +73,7 @@
   iframe {
     @include center(rem(800px));
     @include mainFont(400);
-    font-size: rem(17px);
+    font-size: rem(17px);  //17px
     line-height: rem(30px);
     letter-spacing: 0.025rem;
     padding: 0 rem(20px);
@@ -340,7 +345,7 @@
   padding: 0 rem(20px);
 
   @include media(">=sm") {
-    flex-basis: 30%;
+    flex-basis: 25%;
     padding: 0 rem(10px);
   }
 
@@ -360,6 +365,7 @@
     list-style: none;
 
     li {
+      
       img {
         display: block;
         max-width: 100%;
@@ -372,6 +378,8 @@
         color: $primaryDark;
         text-decoration: none;
         transition: all 0.3s;
+        font-size: rem(14px); // 원래 없던거
+        word-break: break-all; // 원래 없던거, 글자 기준으로 줄바꿈
 
         &:hover {
           color: rgba(0, 0, 0, 0.5);
@@ -382,6 +390,27 @@
         }
       }
     }
+  }
+  .section-nav {
+    background-color: #fff;
+    margin: 5px 0;
+    padding: 10px 10px;
+    border: 1px solid #e8e8e8;
+    border-radius: 3px;
+    white-space: pre-wrap;
+
+    // a {
+    //   font-size: rem(14px);
+    //   color: rgb(5, 0, 0);
+    //   display: inline-block;
+    //   border: 1px solid $primaryDark;
+    //   border-radius: rem(20px);
+    //   padding: 0 rem(10px);
+    //   margin-right: rem(2px);
+    //   margin-bottom: rem(8px);
+    //   text-decoration: none;
+    // }
+
   }
 }
 
@@ -621,7 +650,7 @@
   .tags {
     @include center(rem(800px));
     @include mainFont(400);
-    font-size: rem(18px);
+    font-size: rem(18px); // 18px
     margin: 0 auto rem(29px);
     margin-top: rem(30px);
     letter-spacing: 0.025rem;
@@ -634,7 +663,7 @@
     }
 
     a {
-      font-size: rem(14px);
+      font-size: rem(14px); //14px
       color: $primaryDark;
       display: inline-block;
       border: 1px solid $primaryDark;
@@ -711,8 +740,9 @@
     }
   }
 }
-div#toc {
-  padding: 10px;
-  border: 1px solid #aaa;
-  display: inline-block !important;
-}
+// div#toc {
+//   padding: 10px;
+//   border: 1px solid #aaa;
+//   display: inline-block !important;
+// }
+
