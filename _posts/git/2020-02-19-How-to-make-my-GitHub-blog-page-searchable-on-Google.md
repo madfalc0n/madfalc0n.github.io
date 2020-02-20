@@ -52,50 +52,43 @@ comments: true
    - 보통 jekyll 테마를 추가한 경우 sitemap.xml이 자동으로 생성 되는 것으로 알고있다.
    - 만약 그렇지 않다면 수동으로 넣어주자!
 
-
-
-<pre><code>
->
->---
->
->---
->
->   <?xml version="1.0" encoding="UTF-8"?>
->   <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
->       {% for page in site.pages %}
->           <url>
->               <loc>{{ page.url | prepend: site.baseurl | prepend: site.url }}</loc>
->               {% if page.layout == 'main' %}
->                   <changefreq>weekly</changefreq>
->                   <priority>1</priority>
->                   <lastmod>{{ site.time | date: "%Y-%m-%d" }}</lastmod>
->               {% else %}
->                   <changefreq>monthly</changefreq>
->                   <priority>0.5</priority>
->               {% endif %}
->           </url>
->       {% endfor %}
->       {% for post in site.posts %}
->           <url>
->               <loc>{{ post.url | prepend: site.baseurl | prepend: site.url }}</loc>
->               <changefreq>weekly</changefreq>
->               <priority>0.8</priority>
->               <lastmod>{{ post.date | date: "%Y-%m-%d" }}</lastmod>
->           </url>
->       {% endfor %}
->       {% for author in site.authors %}
->           <url>
->               <loc>{{ author.url | prepend: site.baseurl | prepend: site.url }}</loc>
->               <changefreq>monthly</changefreq>
->               <priority>0.5</priority>
->           </url>
->       {% endfor %}
->   </urlset>
->
-</code></pre>
-
-
-
+{% raw %}
+   ```xml
+   ---
+   ---
+      <?xml version="1.0" encoding="UTF-8"?>
+      <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+          {% for page in site.pages %}
+              <url>
+                  <loc>{{ page.url | prepend: site.baseurl | prepend: site.url }}</loc>
+                  {% if page.layout == 'main' %}
+                      <changefreq>weekly</changefreq>
+                      <priority>1</priority>
+                      <lastmod>{{ site.time | date: "%Y-%m-%d" }}</lastmod>
+                  {% else %}
+                      <changefreq>monthly</changefreq>
+                      <priority>0.5</priority>
+                  {% endif %}
+              </url>
+          {% endfor %}
+          {% for post in site.posts %}
+              <url>
+                  <loc>{{ post.url | prepend: site.baseurl | prepend: site.url }}</loc>
+                  <changefreq>weekly</changefreq>
+                  <priority>0.8</priority>
+                  <lastmod>{{ post.date | date: "%Y-%m-%d" }}</lastmod>
+              </url>
+          {% endfor %}
+          {% for author in site.authors %}
+              <url>
+                  <loc>{{ author.url | prepend: site.baseurl | prepend: site.url }}</loc>
+                  <changefreq>monthly</changefreq>
+                  <priority>0.5</priority>
+              </url>
+          {% endfor %}
+      </urlset>
+   ```
+{% endraw %}
 
 
 
@@ -108,3 +101,5 @@ comments: true
 7. 성공적으로 제출 되었는지 확인
 
    <img src="/assets/img/contents/git/image-20200219222703721.png" alt="image-20200219222703721" style="zoom:80%;" />
+   
+   
