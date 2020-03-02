@@ -22,7 +22,7 @@ toc: true
 
 `Dockerhub`에 회원가입을 진행한다.
 
-<img src="/assets/img/contents/2020-02-13-docker-private-registry-for-dockerhub/image-20200220171558331.png" alt="image-20200220171558331" style="zoom:80%;" />
+<img src="/assets/img/contents/docker/docker-private-registry-for-dockerhub/image-20200220171558331.png" alt="image-20200220171558331" style="zoom:80%;" />
 
 ## 2. Shell에서 `docker login` 입력 후 회원가입한 ID와 비밀번호 입력
 ```bash
@@ -81,7 +81,7 @@ toc: true
 	madfalcon@test_madfalcon_server:~$
 ```
 
-<img src="/assets/img/contents/2020-02-13-docker-private-registry-for-dockerhub/image-20200220171911238.png" alt="image-20200220171911238" style="zoom:80%;" />
+<img src="/assets/img/contents/docker/docker-private-registry-for-dockerhub/image-20200220171911238.png" alt="image-20200220171911238" style="zoom:80%;" />
 
 push가 제대로 이루어졌다면 `dockerhub`에서 업로드 된 이미지 정보를 확인할 수 있다.
 
