@@ -15,7 +15,7 @@ author: madfalc0n
 paginate: true
 comments: true
 ---
-장고에서는 model layer를 수행하지 않고 DB에 **직접적**으로 SQL 실행이 가능하도록 하는 기능이다.
+장고의 raw SQL은 model layer를 수행하지 않고 DB에 **직접적**으로 SQL 실행이 가능하도록 하는 기능이다.
 
 
 
