@@ -1,9 +1,9 @@
 ---
 date: 2020-03-02 19:20:00
 layout: post
-title: 아나콘다를 이용하여 나만의 가상 개발환경을 만들기 위한 메뉴얼
-subtitle: 아나콘다에서 제공하는 가상환경에 대한 메뉴얼
-description: 아나콘다를 통해 가상환경을 생성하고 다뤄보자!
+title: 아나콘다의 가상환경 사용시 알아두면 유용한 명령어들을 알아보자!
+subtitle: 아나콘다의 가상환경 사용시 알아두면 유용한 명령어들 
+description: 아나콘다 가상환경 사용시 알아두면 유용한 명령어들을 직접 테스트해보고 정리하였음
 image: /assets/img/banner/Anaconda.jpg
 optimized_image: /assets/img/banner/Anaconda.jpg
 category: anaconda
