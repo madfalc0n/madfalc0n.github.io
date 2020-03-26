@@ -121,7 +121,7 @@ toc: true
 
 아나콘다에서는 가상환경 정보를 export 하고 import 할 수 있는 기능이 존재한다.`yaml`형식으로 옮겨지며 내용은 가상환경에 설치되어 있는 모듈에 대한 정보가 들어가 있다.
 
-<img src="/assets/img/contents/anaconda/anaconda-manual/image-20200302201723693.png" alt="image-20200302201723693" style="zoom:50%;" />
+<img src="/assets/img/contents/anaconda/anaconda-manual/image-20200302201723693.png" alt="image-20200302201723693" style="zoom:80%;" />
 
 참고해야할 점은 가상환경을 export 후 import 할 때 같은 운영체제간에는 잘 옮겨지지만 **서로 다른 운영체제(예를들어 윈도우에서 리눅스환경으로 전환 시)**인 경우 yml 내에 명시된 모듈을 설치하는 과정에서 에러가 발생할 수 있다. 
 
