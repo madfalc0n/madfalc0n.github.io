@@ -9,7 +9,7 @@ url:                   https://madfalc0n.github.io
 # When your site is in a subdirectory, set to `/<name of directory>`,
 # with a leading `/` but no trailing `/`. Use the empty string '' otherwise.
 # NOTE: You don't need to provide this property when hosting on GitHub Pages or Netlify.
-# baseurl:              '/'
+baseurl:              ''
 
 
 # General settings
@@ -55,6 +55,8 @@ menu:
     url:               /docs/
   - title:             About
     url:               /about/
+  - title:             sample
+    url:               /sample/
 
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..
